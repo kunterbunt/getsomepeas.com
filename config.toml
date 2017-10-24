@@ -1,0 +1,5 @@
+baseurl = "http://getsomepeas.com/"
+languageCode = "en-us"
+title = "GETSOMEPEAS"
+[Taxonomies]
+tag = "tags"

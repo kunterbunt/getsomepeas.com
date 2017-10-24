@@ -1,0 +1,110 @@
+<head>
+  <title>{{.Site.Title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/imgs/icons/favicon.png">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-deep_orange.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <a href={{.Site.BaseURL}}><span class="mdl-layout-title"><b>{{.Site.Title}}</b></span></a>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <!-- <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a> -->
+        </nav>
+      </div>
+  </header>
+    <main class="page-content">
+      <!-- Cover image. -->
+      <div class="mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+        <div class="image frontpage-logo mdl-cell mdl-cell--12-col"></div>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+      <div class="greeting mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-cell mdl-cell--12-col">
+          <h1>Hey there!</h1>
+          <h1><i class="material-icons">keyboard_arrow_down</i></h1>
+        </div>
+      </div>
+      <!-- Introduction. -->
+      <div class="introduction mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+        <div class="introduction--text mdl-cell mdl-cell--6-col">
+          <h3>ABOUT THE BLOG</h3>
+          <p>We are two passionate travelers and food-lovers.</p>
+          <p>Currently based in Hamburg, Germany, we try to see as much of the world as we can.</p>
+          <p>In this blog we follow a simple mission: to show how easy, healthy and quick making your own food is. And how much fun, of course. :)<br/>
+             We try to be minimalistic and give you an idea how basic foods can be made - scratch overpriced supermarket pizza, just make your own, it'll be much better (promise)!</p>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+      <div class="articles-header mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <h3>LATEST POSTS</h3>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+      <div class="articles-container mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <i class="material-icons">&#xE5C5;</i>
+          <div class="vertical-line vertical-line--50px"></div>
+          {{ range first 10 (where .Site.Pages "Section" "==" "food") }}
+            <div class="article">
+              <a href="{{.Permalink}}" title="{{.Params.summary}}" target="_self">
+                <span class="article__date">{{.Date.Format "January 2"}}</span>
+                <div class="article__content">
+                  <div class="article__content--title-section">
+                    <!-- Hacky workaround to make parent link to post clickable. Nested link tricksery. -->
+                    <object><a href="{{ .Section | urlize }}" class="button button--top mdl-button mdl-js-button mdl-js-ripple-effect">{{.Section}}/</a></object>
+                  </div>
+                  <h4 class="article__content--title">{{.Title}}</h4>
+                  {{ if (isset .Params "summary") }}
+                  <p class="article__content--summary">{{.Params.summary}}</p>
+                  {{ end }}
+                  {{ if and (.GetParam "showLogo") (isset .Params "logo")}}
+                  <div class="article__content--image" style="background: url('{{.Params.logoSmall}}');"></div>
+                  {{ end }}
+                  <div class="tags">
+                    {{ range .Params.tags }}
+                      <span><object><a class="button button--bottom mdl-button mdl-js-button mdl-js-ripple-effect" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></object></span>
+                    {{ end }}
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="vertical-line"></div>
+          {{ end }}
+          {{ if ge (len (where .Site.Pages "Section" "==" "posts")) 8 }} <!-- if there are >=8 posts -->
+          <a href="/more" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            SHOW ME MORE
+          </a>
+          {{ else }}
+          <i class="material-icons">arrow_drop_up</i>
+          {{ end }}
+        </div>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+      <!-- <div class="mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-cell mdl-cell--12-col">
+          <h2 class="text-align--center">About Me</h2>
+        </div>
+      </div> -->
+      {{partial "footer.html" .}}
+    </main>
+  </div>
+</body>

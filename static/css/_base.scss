@@ -1,0 +1,114 @@
+$phone:   "only screen and (max-width: 529px)";
+$tablet:  "only screen and (min-width: 530px) and (max-width: 1024px)";
+$desktop: "only screen and (min-width: 1025px)";
+
+$accent-color: #FF5722;
+$text-color: #090909;
+$almost-white: #FAFAFA;
+$darkgray: #424242;
+$gray: #8c8c8c;
+$lightgray: #F5F5F5;
+$code-highlight: #EFF0F1;
+$white : rgba(255, 255, 255, 0.87);
+$black: rgba(0, 0, 0, 0.87);
+
+$header-height: 64px;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body, html, .mdl-layout, .mdl-layout__content, .page-content {
+  // height: auto;
+  color: #424242;
+}
+.mdl-grid {
+  p {
+    font-size: 120%;
+  }
+}
+p, span, h1, h2, h3, h4, figcaption {
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+pre > code {
+  text-color: $text-color;
+}
+p > code, li > code {
+  background-color: $code-highlight;
+  padding: 2px 4px;
+  font-size: 90%;
+}
+.text--centered {
+  text-align: center;
+}
+footer {
+  .mdl-button {
+    span {
+      color: black;
+    }
+    i {
+      line-height: 36px;
+      color: black;
+    }
+  }
+}
+.mdl-layout__header {
+  position: absolute;
+  height: $header-height;
+  a {
+    color: rgba(255, 255, 255, 0.87);
+    &.dark {
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+
+  .mdl-layout-title {
+    color: $white;
+    padding: 8px;
+    border: 2px solid $white;
+    font-size: 150%;
+    &.small {
+      padding: 4px;
+      border: 0;
+      font-size: 125%;
+      vertical-align: middle;
+      margin: 0 0 0 16px;
+    }
+    &.dark {
+      color: $black;
+      border: 0;
+    }
+    &:hover {
+      font-weight: bolder;
+    }
+    text-transform: capitalize;
+    font-family: "Roboto", "Open Sans", sans-serif;
+  }
+
+  .mdl-layout__header-row {
+    padding-left: 64px;
+    background: rgba(255, 255, 255, 0.05);
+    font-family: "Roboto", "Open Sans", sans-serif;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.text-align--center {
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.underline {
+  text-decoration: underline;
+}
