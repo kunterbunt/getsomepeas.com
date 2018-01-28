@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body, html, .mdl-layout, .mdl-layout__content, .page-content {
+  color: #424242; }
+
+.mdl-grid p {
+  font-size: 120%; }
+
+p, span, h1, h2, h3, h4, figcaption {
+  font-family: "Roboto", "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+pre > code {
+  text-color: #090909; }
+
+p > code, li > code {
+  background-color: #EFF0F1;
+  padding: 2px 4px;
+  font-size: 90%; }
+
+.text--centered {
+  text-align: center; }
+
+footer .mdl-button span {
+  color: black; }
+footer .mdl-button i {
+  line-height: 36px;
+  color: black; }
+
+.mdl-layout__header {
+  position: absolute;
+  height: 64px; }
+  .mdl-layout__header a {
+    color: rgba(255, 255, 255, 0.87); }
+    .mdl-layout__header a.dark {
+      color: rgba(0, 0, 0, 0.87); }
+  .mdl-layout__header .mdl-layout-title {
+    color: rgba(255, 255, 255, 0.87);
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    font-size: 150%;
+    text-transform: capitalize;
+    font-family: "Roboto", "Open Sans", sans-serif; }
+    .mdl-layout__header .mdl-layout-title.small {
+      padding: 4px;
+      border: 0;
+      font-size: 125%;
+      vertical-align: middle;
+      margin: 0 0 0 16px; }
+    .mdl-layout__header .mdl-layout-title.dark {
+      color: rgba(0, 0, 0, 0.87);
+      border: 0; }
+    .mdl-layout__header .mdl-layout-title:hover {
+      font-weight: bolder;
+      border: 2px solid #34BE5B; }
+  .mdl-layout__header .mdl-layout__header-row {
+    padding-left: 64px;
+    background: #333;
+    border-bottom: 2px solid #34BE5B;
+    font-family: "Roboto", "Open Sans", sans-serif; }
+    .mdl-layout__header .mdl-layout__header-row a {
+      font-weight: bold; }
+
+.icon {
+  height: 24px;
+  width: 24px; }
+
+.text-align--center {
+  text-align: center; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.underline {
+  text-decoration: underline; }
+
+.mdl-button:hover {
+  color: #34BE5B; }
+
+.mdl-layout__header-row .mdl-button {
+  color: white; }
+
+.page-content {
+  position: relative;
+  top: 64px; }
+  .page-content .article {
+    background-color: #ECEFF1; }
+
+/*# sourceMappingURL=list.css.map */

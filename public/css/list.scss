@@ -1,0 +1,17 @@
+@import "base";
+@import "mixins";
+
+.mdl-layout__header-row {
+  .mdl-button {
+    color: white;
+  }
+}
+
+.page-content {
+  position: relative;
+  top: $header-height;
+
+  .article {
+    background-color: $backround-color--post;
+  }
+}
