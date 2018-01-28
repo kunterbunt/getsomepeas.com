@@ -1,4 +1,4 @@
-baseurl = "http://getsomepeas.com/"
+baseurl = "https://www.getsomepeas.com/"
 languageCode = "en-us"
 title = "GETSOMEPEAS"
 [Taxonomies]
