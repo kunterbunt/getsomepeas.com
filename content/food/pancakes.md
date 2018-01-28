@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "Pancakes"
 date = 2018-01-28T17:51:56+01:00
 summary = "Delicious pancakes, vegan or not."
