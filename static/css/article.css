@@ -57,10 +57,12 @@ footer .mdl-button i {
       color: rgba(0, 0, 0, 0.87);
       border: 0; }
     .mdl-layout__header .mdl-layout-title:hover {
-      font-weight: bolder; }
+      font-weight: bolder;
+      border: 2px solid #34BE5B; }
   .mdl-layout__header .mdl-layout__header-row {
     padding-left: 64px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #333;
+    border-bottom: 2px solid #34BE5B;
     font-family: "Roboto", "Open Sans", sans-serif; }
     .mdl-layout__header .mdl-layout__header-row a {
       font-weight: bold; }
@@ -78,12 +80,18 @@ footer .mdl-button i {
 .underline {
   text-decoration: underline; }
 
+.mdl-button:hover {
+  color: #34BE5B; }
+
 .mdl-layout__header {
   color: rgba(0, 0, 0, 0.87); }
   .mdl-layout__header a {
     color: rgba(0, 0, 0, 0.87); }
   .mdl-layout__header .mdl-layout__header-row {
-    background: rgba(255, 255, 255, 0.6); }
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: none; }
+    .mdl-layout__header .mdl-layout__header-row a {
+      padding-left: 16px; }
 
 img {
   max-height: 70vh;
@@ -104,7 +112,7 @@ img {
     line-height: 96px;
     text-align: center; }
     .container--content .title.accented {
-      background-color: #FF5722; }
+      background-color: #34BE5B; }
     .container--content .title.withImage {
       position: relative;
       top: -112px;
@@ -125,7 +133,7 @@ img {
   .container--content blockquote {
     font-size: 100%;
     background: #f9f9f9;
-    border-left: 10px solid #FF5722;
+    border-left: 10px solid #34BE5B;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "“" "”" "‘" "’"; }
@@ -161,7 +169,7 @@ img {
     .articles-list li .article__title {
       color: black; }
     .articles-list li .article__date {
-      color: #FF5722;
+      color: #34BE5B;
       font-size: 85%; }
     .articles-list li:hover {
       background: white;
@@ -175,7 +183,7 @@ img {
       background: linear-gradient(to right, #e6e6e6, white);
       /* Standard syntax */ }
       .articles-list li:hover .mdl-list__item-avatar i {
-        color: #FF5722; }
+        color: #34BE5B; }
     .articles-list li .mdl-list__item-avatar i {
       height: 50%;
       position: relative;

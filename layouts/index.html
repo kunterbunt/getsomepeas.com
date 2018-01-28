@@ -14,15 +14,13 @@
     <header class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <a href={{.Site.BaseURL}}><span class="mdl-layout-title"><b>{{.Site.Title}}</b></span></a>
+        <a class="mdl-layout-title" href={{.Site.BaseURL}}><span><b>{{.Site.Title}}</b></span></a>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-          <!-- <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a> -->
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#about">ABOUT BLOG</a>
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#about-us">ABOUT US</a>
         </nav>
       </div>
   </header>
@@ -42,7 +40,7 @@
       <!-- Introduction. -->
       <div class="introduction mdl-grid mdl-grid--no-spacing">
         <div class="mdl-layout-spacer"></div>
-        <div class="introduction--text mdl-cell mdl-cell--6-col">
+        <div id="about" class="introduction--text mdl-cell mdl-cell--6-col">
           <h3>ABOUT THE BLOG</h3>
           <p>We are two passionate travelers and food-lovers.</p>
           <p>Currently based in Hamburg, Germany, we try to see as much of the world as we can.</p>
@@ -51,6 +49,7 @@
         </div>
         <div class="mdl-layout-spacer"></div>
       </div>
+      <!-- Articles. -->
       <div class="articles-header mdl-grid mdl-grid--no-spacing">
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-cell mdl-cell--6-col">
@@ -58,12 +57,12 @@
         </div>
         <div class="mdl-layout-spacer"></div>
       </div>
-      <div class="articles-container mdl-grid mdl-grid--no-spacing">
+      <div class="articles mdl-grid mdl-grid--no-spacing">
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-cell mdl-cell--6-col">
           <i class="material-icons">&#xE5C5;</i>
           <div class="vertical-line vertical-line--50px"></div>
-          {{ range first 10 (where .Site.Pages "Section" "==" "food") }}
+          {{ range first 10 (where .Site.RegularPages "Section" "==" "food") }}
             <div class="article">
               <a href="{{.Permalink}}" title="{{.Params.summary}}" target="_self">
                 <span class="article__date">{{.Date.Format "January 2"}}</span>
@@ -99,11 +98,19 @@
         </div>
         <div class="mdl-layout-spacer"></div>
       </div>
-      <!-- <div class="mdl-grid mdl-grid--no-spacing">
-        <div class="mdl-cell mdl-cell--12-col">
-          <h2 class="text-align--center">About Me</h2>
+      <!-- About us. -->
+      <div class="introduction mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+        <div id="about-us" class="introduction--text mdl-cell mdl-cell--6-col">
+          <h3>ABOUT US</h3>
+          <p>We're Mary and Sebastian.</p>
+          <p>Mary studies Food Science and works at a food startup part-time.<br/>She makes sure what we post here is delicious AND healthy. :)</p>
+          <p>Sebastian studies Computer Science.<br/>He makes sure the blog runs and looks nice.</p>
+          <p>We are both active <a href="https://www.slowfood.com/">Slow Foodies</a>. As "food activists" we fight for more sustainable, fairer and healthier food systems worldwide.
+            <br/>Visit our (German) <a href="http://www.slowfoodyouthh.de">Slow Food Youth Hamburg blog</a> if you're nearby.</p>
         </div>
-      </div> -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
       {{partial "footer.html" .}}
     </main>
   </div>

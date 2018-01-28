@@ -2,15 +2,20 @@ $phone:   "only screen and (max-width: 529px)";
 $tablet:  "only screen and (min-width: 530px) and (max-width: 1024px)";
 $desktop: "only screen and (min-width: 1025px)";
 
-$accent-color: #FF5722;
-$text-color: #090909;
+$white : rgba(255, 255, 255, 0.87);
+$black: rgba(0, 0, 0, 0.87);
 $almost-white: #FAFAFA;
 $darkgray: #424242;
 $gray: #8c8c8c;
 $lightgray: #F5F5F5;
+$green: #34BE5B;
+
+$accent-color: #34BE5B;
+$text-color: #090909;
 $code-highlight: #EFF0F1;
-$white : rgba(255, 255, 255, 0.87);
-$black: rgba(0, 0, 0, 0.87);
+$background-color: #DFE2DB;
+$backround-color--post: #ECEFF1;
+$line-color: $darkgray;
 
 $header-height: 64px;
 
@@ -84,6 +89,7 @@ footer {
     }
     &:hover {
       font-weight: bolder;
+      border: 2px solid $accent-color;
     }
     text-transform: capitalize;
     font-family: "Roboto", "Open Sans", sans-serif;
@@ -91,7 +97,8 @@ footer {
 
   .mdl-layout__header-row {
     padding-left: 64px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #333;
+    border-bottom: 2px solid $accent-color;
     font-family: "Roboto", "Open Sans", sans-serif;
     a {
       font-weight: bold;
@@ -111,4 +118,9 @@ footer {
 }
 .underline {
   text-decoration: underline;
+}
+.mdl-button {
+  &:hover {
+    color: $accent-color;
+  }
 }

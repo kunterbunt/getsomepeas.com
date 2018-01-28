@@ -56,10 +56,12 @@ footer .mdl-button i {
       color: rgba(0, 0, 0, 0.87);
       border: 0; }
     .mdl-layout__header .mdl-layout-title:hover {
-      font-weight: bolder; }
+      font-weight: bolder;
+      border: 2px solid #34BE5B; }
   .mdl-layout__header .mdl-layout__header-row {
     padding-left: 64px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #333;
+    border-bottom: 2px solid #34BE5B;
     font-family: "Roboto", "Open Sans", sans-serif; }
     .mdl-layout__header .mdl-layout__header-row a {
       font-weight: bold; }
@@ -76,6 +78,9 @@ footer .mdl-button i {
 
 .underline {
   text-decoration: underline; }
+
+.mdl-button:hover {
+  color: #34BE5B; }
 
 header a {
   padding-left: 64px; }
@@ -105,10 +110,11 @@ header a {
       font-size: 64px; }
 
 .introduction {
-  background-color: #c0b4a4;
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+  background-color: #424242;
+  color: #FAFAFA;
   text-align: justify; }
-  .introduction .introduction--text {
-    padding: 32px; }
 
 .container--logo {
   height: 400px;
@@ -133,32 +139,34 @@ header a {
         font-size: 32pt; } }
 
 .container--intro {
-  background-color: #D5CDC2; }
+  background-color: #DFE2DB; }
   .container--intro p {
     text-align: justify; }
 
 .articles-header {
-  background-color: #D5CDC2; }
+  background-color: #DFE2DB;
+  border-top: 1px solid #d2d7cd; }
   .articles-header h2 {
     margin-bottom: 0; }
 
-.articles-container {
-  background-color: #D5CDC2;
+.articles {
+  background-color: #DFE2DB;
+  border-bottom: 1px solid #d2d7cd;
   min-height: calc(100vh - 101px - 64px - 72px);
   text-align: center; }
-  .articles-container i {
+  .articles i {
     font-size: 2rem;
     color: #8c8c8c; }
-    .articles-container i:hover {
+    .articles i:hover {
       cursor: default; }
-  .articles-container .vertical-line {
+  .articles .vertical-line {
     width: 0;
     height: 100px;
     margin: 0 auto;
     border: 1px solid #424242; }
-    .articles-container .vertical-line.vertical-line--50px {
+    .articles .vertical-line.vertical-line--50px {
       height: 50px; }
-  .articles-container .article {
+  .articles .article {
     width: 100%;
     margin: 0 auto;
     padding: 0 16px 8px 16px;
@@ -171,16 +179,16 @@ header a {
     border-radius: 0.25em;
     text-align: center; }
     @media only screen and (min-width: 1025px) {
-      .articles-container .article {
+      .articles .article {
         width: 65%;
         min-width: 400px; } }
-    .articles-container .article:hover {
-      background-color: #d1c8bc; }
-      .articles-container .article:hover .article__content {
+    .articles .article:hover {
+      background-color: #daddd5; }
+      .articles .article:hover .article__content {
         -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.75); }
-    .articles-container .article .article__date {
+    .articles .article .article__date {
       color: #090909;
       font-size: 150%;
       border: 2px solid #424242;
@@ -190,16 +198,16 @@ header a {
       -webkit-border-radius: 0.1em;
       -moz-border-radius: 0.1em;
       border-radius: 0.1em; }
-      .articles-container .article .article__date:after {
+      .articles .article .article__date:after {
         content: '';
         width: 0;
         position: relative;
         border: 1px solid #424242;
         top: 29px;
         left: -48%; }
-      .articles-container .article .article__date:hover {
+      .articles .article .article__date:hover {
         cursor: pointer; }
-    .articles-container .article .article__content {
+    .articles .article .article__content {
       color: black;
       background-color: #ECEFF1;
       -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
@@ -209,17 +217,17 @@ header a {
       -moz-border-radius: 0.1em;
       border-radius: 0.1em;
       margin-bottom: 13px; }
-      .articles-container .article .article__content:hover {
+      .articles .article .article__content:hover {
         cursor: pointer; }
-      .articles-container .article .article__content .article__content--image {
-        background-color: #FF5722;
+      .articles .article .article__content .article__content--image {
+        background-color: #34BE5B;
         height: 256px;
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important; }
-      .articles-container .article .article__content .article__content--title-section {
+      .articles .article .article__content .article__content--title-section {
         text-align: left; }
-      .articles-container .article .article__content .article__content--title {
+      .articles .article .article__content .article__content--title {
         color: #090909;
         line-height: 32px;
         text-align: center;
@@ -229,12 +237,12 @@ header a {
         min-height: 64px;
         margin: 0 auto;
         -webkit-transition: box-shadow 0.15s; }
-      .articles-container .article .article__content .article__content--summary {
+      .articles .article .article__content .article__content--summary {
         color: #424242;
         text-align: left;
         padding: 0 8px;
         font-size: 110%; }
-    .articles-container .article .tags {
+    .articles .article .tags {
       padding: 0;
       margin: 0;
       background-color: #dde3e6;
@@ -246,9 +254,9 @@ a.button {
   a.button:hover {
     color: #090909; }
   a.button.button--top:hover {
-    border-top: 2px solid #FF5722; }
+    border-top: 2px solid #34BE5B; }
   a.button.button--bottom:hover {
-    border-bottom: 2px solid #FF5722; }
+    border-bottom: 2px solid #34BE5B; }
 
 footer img {
   margin-top: 6px; }

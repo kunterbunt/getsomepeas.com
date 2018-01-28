@@ -5,10 +5,6 @@ $article__content--title-height: 32px;
 $article__content--image-height: 256px;
 $article__content-height: 64px;
 
-$background-color: #D5CDC2;
-$post-color: #ECEFF1;
-$line-color: $darkgray;
-
 $greeting-height: 100px;
 
 header {
@@ -45,17 +41,16 @@ header {
   }
 }
 .introduction {
-  background-color: darken($background-color, 10%);
+  border-top: 1px solid darken($darkgray, 5%);
+  border-bottom: 1px solid darken($darkgray, 5%);
+  background-color: $darkgray;
+  color: $almost-white;
   text-align: justify;
-  .introduction--text {
-    padding: 32px;
-  }
 }
 
 .container--logo {
   height: 400px;
   max-height: 50%;
-  // @include gradient(white, $articles-container-background-color);
   h1 {
     color: black;
     position: relative;
@@ -82,12 +77,14 @@ header {
 
 .articles-header {
   background-color: $background-color;
+  border-top: 1px solid darken($background-color, 5%);
   h2 {
     margin-bottom: 0;
   }
 }
-.articles-container {
+.articles {
   background-color: $background-color;
+  border-bottom: 1px solid darken($background-color, 5%);
   min-height: calc(100vh - 101px - 64px - 72px);
   text-align: center;
 
@@ -149,7 +146,7 @@ header {
     }
     .article__content {
       color: black;
-      background-color: $post-color;
+      background-color: $backround-color--post;
       @include box-shadow-default();
       @include rounded(0.1em);
       margin-bottom: 13px;
@@ -177,6 +174,9 @@ header {
         min-height: $article__content-height;
         margin: 0 auto;
         -webkit-transition: box-shadow 0.15s;
+        &:hover {
+
+        }
       }
 
       .article__content--summary {
@@ -190,7 +190,7 @@ header {
     .tags {
       padding: 0;
       margin: 0;
-      background-color: darken($post-color, 5%);
+      background-color: darken($backround-color--post, 5%);
       text-align: left;
     }
   }
