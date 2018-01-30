@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.getsomepeas.com/food/winter-soup/</loc>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.getsomepeas.com/food/pancakes/</loc>
     <lastmod>2018-01-28T17:51:56+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.getsomepeas.com/tags/basic/</loc>
-    <lastmod>2018-01-28T17:51:56+01:00</lastmod>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,25 +26,31 @@
   
   <url>
     <loc>https://www.getsomepeas.com/food/</loc>
-    <lastmod>2018-01-28T17:51:56+01:00</lastmod>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.getsomepeas.com/</loc>
-    <lastmod>2018-01-28T17:51:56+01:00</lastmod>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.getsomepeas.com/tags/soup/</loc>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.getsomepeas.com/tags/</loc>
-    <lastmod>2018-01-28T17:51:56+01:00</lastmod>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.getsomepeas.com/tags/vegan/</loc>
-    <lastmod>2018-01-28T17:51:56+01:00</lastmod>
+    <lastmod>2018-01-30T20:27:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   

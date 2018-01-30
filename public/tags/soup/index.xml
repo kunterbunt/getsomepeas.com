@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GETSOMEPEAS</title>
-    <link>https://www.getsomepeas.com/</link>
-    <description>Recent content on GETSOMEPEAS</description>
+    <title>Soup on GETSOMEPEAS</title>
+    <link>https://www.getsomepeas.com/tags/soup/</link>
+    <description>Recent content in Soup on GETSOMEPEAS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jan 2018 20:27:30 +0100</lastBuildDate>
     
-	<atom:link href="https://www.getsomepeas.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.getsomepeas.com/tags/soup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,19 +20,6 @@
       <description>It is winter time here in Hamburg, and as we try to cook seasonally that means mostly cabbage varieties and potatoes.
 For cold days a hearty soup is best, so here&amp;rsquo;s our take at one:
 Ingredients     Ingredients     600g (two handful) potatoes   1 large carrot   1 large beetroot   1 large parsnip   3 onions   5 garlic cloves   8 dried chilis (if you like it spicy)   ~10 Sichuan peppercorns   1 tsp coriander   a good bit herbs of your liking (oregano, basil, &amp;hellip;)   1 tsb paprika powder   to taste salt and pepper (if in doubt, add more pepper)   a bit of olive oil for frying   ~1l water    What to do Chop up the ingredients.</description>
-    </item>
-    
-    <item>
-      <title>Pancakes</title>
-      <link>https://www.getsomepeas.com/food/pancakes/</link>
-      <pubDate>Sun, 28 Jan 2018 17:51:56 +0100</pubDate>
-      
-      <guid>https://www.getsomepeas.com/food/pancakes/</guid>
-      <description>These pancakes are really simple to make.
-Ingredients Let&amp;rsquo;s start with the vegan version:
-    Ingredients     300g wheat or spelt flour   500g water   a little salt   some fat for frying (e.g. olive oil)    
- Or if you&amp;rsquo;d rather have the dairy version:
-    Ingredients     300g wheat or spelt flour   1 or 2 eggs   &amp;lt;500g water or milk (fill up enough liquid so that together with the eggs you&amp;rsquo;re at 500g liquids)   a little salt   some fat for frying (e.</description>
     </item>
     
   </channel>

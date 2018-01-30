@@ -6,7 +6,7 @@
     <description>Recent content in Tags on GETSOMEPEAS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2018 17:51:56 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2018 20:27:30 +0100</lastBuildDate>
     
 	<atom:link href="https://www.getsomepeas.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Basic</title>
       <link>https://www.getsomepeas.com/tags/basic/</link>
-      <pubDate>Sun, 28 Jan 2018 17:51:56 +0100</pubDate>
+      <pubDate>Tue, 30 Jan 2018 20:27:30 +0100</pubDate>
       
       <guid>https://www.getsomepeas.com/tags/basic/</guid>
       <description></description>
@@ -30,9 +30,18 @@
     </item>
     
     <item>
+      <title>Soup</title>
+      <link>https://www.getsomepeas.com/tags/soup/</link>
+      <pubDate>Tue, 30 Jan 2018 20:27:30 +0100</pubDate>
+      
+      <guid>https://www.getsomepeas.com/tags/soup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Vegan</title>
       <link>https://www.getsomepeas.com/tags/vegan/</link>
-      <pubDate>Sun, 28 Jan 2018 17:51:56 +0100</pubDate>
+      <pubDate>Tue, 30 Jan 2018 20:27:30 +0100</pubDate>
       
       <guid>https://www.getsomepeas.com/tags/vegan/</guid>
       <description></description>
